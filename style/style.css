@@ -181,7 +181,7 @@ a{
     .nav__list{
         flex-wrap: wrap;
         justify-content: center;
-        row-gap: 5px;
+        row-gap: 10px;
     }
     .footer{
         max-width: 100%;
