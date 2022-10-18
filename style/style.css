@@ -1,0 +1,226 @@
+@import './fonts.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+:root{
+    --link-color: #EF4423;
+    --white: #FFFFFF;
+    --black: #3A3838;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1110px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+/* Navigation */
+.nav{
+    padding: 20px 0 15px;
+}
+.nav__info{
+    max-width: 1110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__info-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav__img{
+    width: 150px;
+    margin-bottom: 4px;
+}
+.left__title{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+.nav__list{
+    display: flex;
+    column-gap: 15px;
+}
+.nav__link{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+    transition: all 250ms;
+}
+.nav__link:hover{
+    color: var(--link-color);
+}
+/* Header */
+.header__img{
+    width: 1110px;
+    display: flex;
+    margin: auto;
+}
+/* Main */
+.main{
+    background: #E5E5E5;
+    margin-bottom: 50px;
+}
+.main__info{
+    display: flex;
+}
+.info__card{
+    max-width: 337px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #B71C1C;
+}
+.info__card-title{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    color: var(--white);
+    margin: 8px 15px;
+}
+.info__card-text{
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 19px;
+    color: #E5E5E5;
+    margin: 0 15px 15px 15px;
+    text-align: justify;
+}
+.info__card:nth-child(2){
+    background: #6A1B9A;
+}
+.info__card:nth-child(3){
+    background: #303F9F;
+}
+.info__card:nth-child(4){
+    background: #00695C;
+}
+.main__center{
+    display: flex;
+    justify-content: center;
+    background: var(--white);
+    padding: 40px 0;
+}
+.center__title{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--black);
+}
+.project__box{
+    display: flex;
+    column-gap: 30px;
+}
+.box__info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.box__title{
+    margin-top: 20px;
+    font-family: 'R700';
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--black);
+}
+.box__text{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #686868;
+    text-align: justify;
+}
+/* Footer */
+.footer{
+    background: var(--black);
+    padding: 28px 0 29px;
+}
+.footer__left-title{
+    margin-top: 4px;
+    color: var(--white);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+.footer__link{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--white);
+    transition: all 250ms;
+}
+.footer__link:hover{
+    color: var(--link-color);
+}
+
+/* Media */
+@media(max-width: 1300px){
+    .nav__info,
+    .nav__list{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 5px;
+    }
+    .footer{
+        max-width: 100%;
+    }
+}
+@media(max-width: 1140px){
+    .project__box{
+        flex-direction: column;
+        margin: auto;
+    }
+    .box__text{
+        display: none;
+    }
+}
+@media(max-width: 1050px){
+    .header__img{
+        display: none;
+    }
+    .main__info{
+        background: var(--white);
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+@media(max-width: 890px){
+    .nav__info-left{
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 710px){
+    .info__card{
+        margin: auto;
+    }
+    .box__title{
+        padding: 10px 8px;
+    }
+}
+@media(max-width: 560px){
+    .project__img{
+        display: none;
+    }
+}
